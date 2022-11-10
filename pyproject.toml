@@ -1,6 +1,68 @@
+# ----- Build System for hatchling ----- #
 [build-system]
-build-backend = 'setuptools.build_meta'
-requires = [
-    'setuptools >= 43.0.0',
-    'numpy',
-    ]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.version]
+path = "boac/version.py"
+
+[tool.hatch.build.targets.sdist]
+exclude = [
+  "/.github",
+  "/docs",
+  "/examples",
+  "/tests",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["boac"]
+
+# ----- Project Metadata and Requirements ----- #
+[project]
+name = "boac"
+readme = "README.md"
+description = "Integrated suite for particle accelerator beam optics and analysis"
+authors = [
+    {name = "Riccardo de Maria", email = "riccardo.de.maria@cern.ch"},
+    {name = "Felix Soubelet", email = "felix.soubelet@cern.ch"},
+]
+license = "Apache 2.0"
+dynamic = ["version"]
+requires-python = ">=3.8"
+
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: Apache Software License",
+    "Natural Language :: English",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Topic :: Scientific/Engineering",
+    "Topic :: Scientific/Engineering :: Physics",
+    "Topic :: Scientific/Engineering :: Visualization",
+    "Topic :: Utilities",
+]
+
+# required packages
+dependencies = [
+    "numpy>=1.0"
+]
+
+[project.optional-dependencies]
+test = [
+  "pytest >= 6.0",
+]
+docs = [
+  "Sphinx >= 4.4",
+  "sphinx-rtd-theme >= 1.0",
+]
+
+[project.urls]
+homepage = "https://github.com/beamopticsanalysis/boac"
+repository = "https://github.com/beamopticsanalysis/boac"
+documentation = "https://boac.readthedocs.io"
