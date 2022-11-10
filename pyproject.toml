@@ -26,7 +26,7 @@ authors = [
     {name = "Riccardo de Maria", email = "riccardo.de.maria@cern.ch"},
     {name = "Felix Soubelet", email = "felix.soubelet@cern.ch"},
 ]
-license = "Apache 2.0"
+license = "Apache-2.0"
 dynamic = ["version"]
 requires-python = ">=3.8"
 
