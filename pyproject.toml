@@ -52,6 +52,7 @@ classifiers = [
 dependencies = [
     "numpy>=1.0",
     "tfs-pandas>=3.0",
+    "pyhdtoolkit>=1.0",
 ]
 
 [project.optional-dependencies]
