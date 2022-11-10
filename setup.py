@@ -12,7 +12,7 @@ extensions = []
 #########
 
 setup(
-    name='boa',
+    name='boac',
     version='0.0.0',
     description='Integrated suite for beam optics and analysis',
     long_description='Integrated suite for particle accelerator beam optics and analysis',
@@ -22,12 +22,12 @@ setup(
     install_requires=[
         'numpy>=1.0',
         ],
-    url='https://github.com/beamopticsanalysis/boa',
+    url='https://github.com/beamopticsanalysis/boac',
     license='Apache 2.0',
-    download_url="https://pypi.python.org/pypi/boa",
+    download_url="https://pypi.python.org/pypi/boac",
     project_urls={
-            "Bug Tracker": "https://github.com/beamopticsanalysis/boa/issues",
-            "Documentation": 'https://github.com/beamopticsanalysis/boa/',
-            "Source Code": "https://github.com/beamopticsanalysis/boa/",
+            "Bug Tracker": "https://github.com/beamopticsanalysis/boac/issues",
+            "Documentation": 'https://github.com/beamopticsanalysis/boac/',
+            "Source Code": "https://github.com/beamopticsanalysis/boac/",
         },
     )
