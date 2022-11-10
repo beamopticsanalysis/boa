@@ -66,3 +66,4 @@ docs = [
 homepage = "https://github.com/beamopticsanalysis/boac"
 repository = "https://github.com/beamopticsanalysis/boac"
 documentation = "https://boac.readthedocs.io"
+"Bug Tracker" = "https://github.com/beamopticsanalysis/boac/issues"
