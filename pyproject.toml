@@ -50,7 +50,8 @@ classifiers = [
 
 # required packages
 dependencies = [
-    "numpy>=1.0"
+    "numpy>=1.0",
+    "tfs-pandas>=3.0",
 ]
 
 [project.optional-dependencies]
