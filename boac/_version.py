@@ -1,4 +1,4 @@
-VERSION = "1.0.0"
+__version__ = "0.0.2"
 
 
 def version_info() -> str:
@@ -8,7 +8,7 @@ def version_info() -> str:
     from pathlib import Path
 
     info = {
-        "boac version": VERSION,
+        "boac version": __version__,
         "Install path": Path(__file__).resolve().parent,
         "Python version": f"{sys.version_info[0]}.{sys.version_info[1]}.{sys.version_info[2]}",
         "Python implementation": sys.version,
