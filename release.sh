@@ -1,8 +1,8 @@
 #!/bin/bash
 set -euo pipefail; IFS=$'\n\t'
 
-NAME=$( python setup.py --name )
-VER=$( python setup.py --version )
+NAME="boac"
+VER=$( python -c "from pathlib import Path; dd={}; f=open('boac/_version.py', 'r'); exec(f.read(), dd); f.close(); print(dd['__version__'])" )
 
 echo "========================================================================"
 echo "Tagging $NAME v$VER"
@@ -15,6 +15,7 @@ echo "========================================================================"
 echo "Releasing $NAME v$VER on PyPI"
 echo "========================================================================"
 
-python setup.py sdist
+python -m build
+twine check dist/*
 twine upload dist/*
 rm -r dist/ *.egg-info
