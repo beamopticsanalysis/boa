@@ -15,7 +15,7 @@ echo "========================================================================"
 echo "Releasing $NAME v$VER on PyPI"
 echo "========================================================================"
 
-python -m build
+python -m pip wheel boa
 twine check dist/*
 twine upload dist/*
 rm -r dist/ *.egg-info
