@@ -1,8 +1,8 @@
 #!/bin/bash
 set -euo pipefail; IFS=$'\n\t'
 
-NAME="boac"
-VER=$( python -c "from pathlib import Path; dd={}; f=open('boac/_version.py', 'r'); exec(f.read(), dd); f.close(); print(dd['__version__'])" )
+NAME="boa"
+VER=$( python -c "from pathlib import Path; dd={}; f=open('boa/_version.py', 'r'); exec(f.read(), dd); f.close(); print(dd['__version__'])" )
 
 echo "========================================================================"
 echo "Tagging $NAME v$VER"

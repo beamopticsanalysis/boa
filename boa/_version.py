@@ -8,7 +8,7 @@ def version_info() -> str:
     from pathlib import Path
 
     info = {
-        "boac version": __version__,
+        "boa version": __version__,
         "Install path": Path(__file__).resolve().parent,
         "Python version": f"{sys.version_info[0]}.{sys.version_info[1]}.{sys.version_info[2]}",
         "Python implementation": sys.version,

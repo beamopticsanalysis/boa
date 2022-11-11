@@ -4,7 +4,7 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [tool.hatch.version]
-path = "boac/_version.py"
+path = "boa/_version.py"
 
 [tool.hatch.build.targets.sdist]
 exclude = [
@@ -15,11 +15,11 @@ exclude = [
 ]
 
 [tool.hatch.build.targets.wheel]
-packages = ["boac"]
+packages = ["boa"]
 
 # ----- Project Metadata and Requirements ----- #
 [project]
-name = "boac"
+name = "boa"
 readme = "README.md"
 description = "Integrated suite for particle accelerator beam optics and analysis"
 authors = [
@@ -65,7 +65,7 @@ docs = [
 ]
 
 [project.urls]
-homepage = "https://github.com/beamopticsanalysis/boac"
-repository = "https://github.com/beamopticsanalysis/boac"
-documentation = "https://boac.readthedocs.io"
-"Bug Tracker" = "https://github.com/beamopticsanalysis/boac/issues"
+homepage = "https://github.com/beamopticsanalysis/boa"
+repository = "https://github.com/beamopticsanalysis/boa"
+documentation = "https://boa.readthedocs.io"
+"Bug Tracker" = "https://github.com/beamopticsanalysis/boa/issues"
