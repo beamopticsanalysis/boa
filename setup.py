@@ -16,14 +16,14 @@ extensions = []
 # Setup #
 #########
 
-version_file = Path(__file__).parent / 'xtrack/_version.py'
+version_file = Path(__file__).parent / 'boa/_version.py'
 dd = {}
 with open(version_file.absolute(), 'r') as fp:
     exec(fp.read(), dd)
 __version__ = dd['__version__']
 
 setup(
-    name='xtrack',
+    name='boa',
     version=__version__,
     description='Integrated suite for beam optics and analysis',
     long_description='Integrated suite for particle accelerator beam optics and analysis',
