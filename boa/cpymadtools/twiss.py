@@ -1,1 +1,1 @@
-from pyhdtoolkit.cpymadtools.twiss import *
+from cpymadtools.twiss import *

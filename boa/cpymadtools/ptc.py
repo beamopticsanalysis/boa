@@ -1,1 +1,1 @@
-from pyhdtoolkit.cpymadtools.ptc import *
+from cpymadtools.ptc import *

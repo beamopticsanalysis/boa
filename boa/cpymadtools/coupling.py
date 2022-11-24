@@ -1,1 +1,1 @@
-from pyhdtoolkit.cpymadtools.coupling import *
+from cpymadtools.coupling import *

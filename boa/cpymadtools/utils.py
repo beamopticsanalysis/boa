@@ -1,1 +1,1 @@
-from pyhdtoolkit.cpymadtools.utils import *
+from cpymadtools.utils import *

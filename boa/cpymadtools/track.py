@@ -1,1 +1,1 @@
-from pyhdtoolkit.cpymadtools.track import *
+from cpymadtools.track import *
